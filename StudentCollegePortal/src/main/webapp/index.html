@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Student Login</title>
+
+    <!-- CSS file जोडत आहोत -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>College Student Portal</h1>
+
+        <h2>Student Login</h2>
+
+        <!--
+            User Login button दाबल्यावर
+            form POST request पाठवेल.
+
+            action="login"
+            म्हणजे request LoginServlet कडे जाईल.
+
+            method="post"
+            कारण username/password server ला submit करत आहोत.
+        -->
+        <form action="login" method="post">
+
+            <!--
+                name="rollno" खूप important आहे.
+
+                Servlet मध्ये:
+                request.getParameter("rollno")
+
+                वापरून ही value घेऊ.
+            -->
+            <label>Roll Number</label>
+            <input type="text"
+                   name="rollno"
+                   required>
+
+
+            <label>Password</label>
+
+            <!--
+                Password field.
+                Servlet मध्ये:
+                request.getParameter("password")
+            -->
+            <input type="password"
+                   name="password"
+                   required>
+
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <br>
+
+        <!-- New student registration -->
+        <a href="register.html">
+            New Student? Register Here
+        </a>
+
+    </div>
+
+</body>
+</html>

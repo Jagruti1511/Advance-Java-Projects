@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-box {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.employee {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px 0;
+}
